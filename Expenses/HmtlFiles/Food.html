@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="../CssFiles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <a id="linkColor" href="food.html">Food</a>
+            <a id="linkColor" href="drinks.html">Drinks</a>
+            <a id="linkColor" href="smoking.html">Other</a>
+            <a id="linkColor" href="overall.html">Overall</a>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+
+        <form id="expense-form">
+            <input type="hidden" id="type" value="food">
+            <label for="item">Item:</label>
+            <input type="text" id="item" name="item">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" step="0.01">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <button type="submit" id="add-expense-btn">Add Expense</button>
+        </form>
+
+        <div class="items-container">
+            <h2>Category Details</h2>
+            <div id="totalSum">Total Sum: 0 BGN</div>
+            <table id="itemsTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Total Price (BGN)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be inserted here -->
+                </tbody>
+            </table>
+            <div class="controls">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <button id="updateChartBtn" onclick="updateChart()">Update Chart</button>
+            <canvas id="spendingChart"></canvas>
+        </div>
+    </div>
+
+    <script src="../JsFiles/formHandler.js"></script>
+    <script src="../JsFiles/domChanges.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="../JsFiles/dataChart.js" type="module"></script>
+    <script src="../JsFiles/items.js"></script>
+    <script src="../JsFiles/logout.js"></script>
+</body>
+</html>
