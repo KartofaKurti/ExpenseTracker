@@ -108,3 +108,4 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add event listener to the update button
 const updateButton = document.getElementById('updateChartBtn');
 updateButton.addEventListener('click', updateChart);
+
