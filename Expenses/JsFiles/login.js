@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', function () {
         registrationForm.style.display = 'block';
     });
 });
+
