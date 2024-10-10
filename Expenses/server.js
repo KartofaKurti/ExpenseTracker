@@ -15,7 +15,7 @@ const config = {
     server: 'DESKTOP-GDPU067',
     database: 'ExpensesTracker',
     user: 'PechenKartof',
-    password: 'DreamGood12',
+    password: 'Azsumqk11',
     options: {
         encrypt: true,
         trustServerCertificate: true,
